@@ -1,4 +1,4 @@
-# PerlinNoiseHeightMap
+# HeightMapPerlinNoise
 
 **Description:**
   - 2D Height map renderer using perlin noise (with linear interpolation) (Made in c++ using the SFML library)
