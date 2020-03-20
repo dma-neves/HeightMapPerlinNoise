@@ -7,13 +7,13 @@ class Octave
 {
 public:
 
-    Octave(Vector2D dim, int freq, float amp, int temp);
+    Octave(Vector2D dim, int freq, float amp);
     ~Octave();
 
     float value(int x, int y) { return values[y][x]; }
     float getAmp() { return amp; }
 
-//private:
+private:
 
     void reset();
     void generateOctave();

@@ -1,11 +1,10 @@
 #include "Octave.h"
 
-Octave::Octave(Vector2D dim, int period, float amp, int temp) : dim(dim), period(period), amp(amp)
+Octave::Octave(Vector2D dim, int period, float amp) : dim(dim), period(period), amp(amp)
 {
     values = new float*[(int)dim.y];
 
     for(int i = 0; i < dim.y; i++) values[i] = new float[(int)dim.x];
-    reset();
 
     generateOctave();
 }
@@ -48,13 +47,7 @@ float Octave::linearInterpolationHeight(float pos_a, float height_a, float pos_b
 
 void Octave::generateOctave()
 {
-    for(int y = 0; y < dim.y; y += 1)
-    {
-        for(int x = 0; x < dim.x; x += 1)
-        {
-            values[y][x] = 0;//getHeight();
-        }
-    }
+    reset();
 
     for(int y = 0; y != dim.y+period-1; y += period)
     {
