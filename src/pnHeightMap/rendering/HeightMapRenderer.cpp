@@ -1,7 +1,5 @@
 #include "HeightMapRenderer.h"
 
-#include <iostream>
-
 HeightMapRenderer::HeightMapRenderer(HeightMap* hmap, int res, sf::RenderWindow* window) : hmap(hmap), res(res), window(window)
 {
 }

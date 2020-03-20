@@ -71,8 +71,6 @@ void HeightMap::applyPerlinNoise()
         }
     }
 
-    std::cout << totalAmp << std::endl;
-
     for(int i = 0; i < numOctaves; i++)
     {
         delete( octaves.at(i) );
