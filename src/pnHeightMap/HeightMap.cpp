@@ -49,7 +49,7 @@ void HeightMap::applyPerlinNoise()
 
     for(int i = 0; i < numOctaves; i++)
     {
-        Octave* octave = new Octave(dim, pow(lacunarity, i+1), pow(persistance, i+1), i);
+        Octave* octave = new Octave(dim, pow(lacunarity, i+1), pow(persistance, i+1));
         octaves.push_back(octave);
 
         totalAmp += octave->getAmp();
