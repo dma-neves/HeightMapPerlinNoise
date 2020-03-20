@@ -7,9 +7,9 @@
   1. Linux operating system
   2. GCC(G++) compiler
 
-**Installing and running):**
+**Installing and running:**
   1. *Installing SFML*
       - (https://www.sfml-dev.org/tutorials/2.5/start-linux.php)
       
   2. *Building and running*
-      - Use the included Makefile. The executable can be foun in the /bin folder
+      - Build the program using the included Makefile. The executable can be foun in the /bin folder
