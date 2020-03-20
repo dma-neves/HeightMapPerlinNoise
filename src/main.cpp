@@ -4,7 +4,7 @@
 
 int main()
 {
-    std::cout << "Example: Resolution = 100 Number of octaves = 3 Lacunariry = 4.1 Persistance = 3.5" << std::endl << std::endl;
+    std::cout << "Example: Resolution = 500 Number of octaves = 3 Lacunariry = 4.1 Persistance = 3.5" << std::endl << std::endl;
     
     int resolution, numOctaves;
     float lacunarity, persistance;
@@ -16,6 +16,9 @@ int main()
     std::cin >> lacunarity;
     std::cout << "Persistance: ";
     std::cin >> persistance;
+
+    //int resolution = 500, numOctaves = 3;
+    //float lacunarity = 4.1, persistance = 3.5;
 
     PN_HeightMap pnHeightMap(500, 500, "Perlin noise height map", resolution, numOctaves, lacunarity, persistance);
     pnHeightMap.run();
